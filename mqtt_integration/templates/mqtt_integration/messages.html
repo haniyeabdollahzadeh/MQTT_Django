@@ -1,0 +1,17 @@
+<!-- mqtt_integration/templates/mqtt_integration/messages.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Received Messages</title>
+</head>
+<body>
+    <h1>Received MQTT Messages</h1>
+    <ul>
+        {% for message in messages %}
+            <li>Topic: {{ message.topic }} - Message: {{ message.message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

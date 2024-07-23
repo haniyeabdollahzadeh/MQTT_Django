@@ -1,0 +1,17 @@
+<!-- mqtt_integration/templates/mqtt_integration/subscribe_topic.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Subscribe to MQTT Topic</title>
+  </head>
+  <body>
+    <h1>Subscribe to MQTT Topic</h1>
+    <form method="post">
+      {% csrf_token %}
+      <label for="topic">Topic:</label><br />
+      <input type="text" id="topic" name="topic" /><br />
+      <input type="submit" value="Subscribe" />
+    </form>
+  </body>
+</html>

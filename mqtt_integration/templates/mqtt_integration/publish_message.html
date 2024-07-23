@@ -1,0 +1,19 @@
+<!-- mqtt_integration/templates/mqtt_integration/publish_message.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Publish MQTT Message</title>
+  </head>
+  <body>
+    <h1>Publish MQTT Message</h1>
+    <form method="post">
+      {% csrf_token %}
+      <label for="topic">Topic:</label><br />
+      <input type="text" id="topic" name="topic" /><br />
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br />
+      <input type="submit" value="Publish" />
+    </form>
+  </body>
+</html>
