@@ -1,2 +1,2 @@
-MQTT_BROKER = '91.246.44.96'  
+MQTT_BROKER = 'broker_address'  
 MQTT_PORT = 1883
